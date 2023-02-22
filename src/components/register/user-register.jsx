@@ -5,6 +5,8 @@ import Pagination2 from "./Pagination2";
 import Pagination3 from "./Pagination3";
 import Pagination4 from "./Pagination4";
 import RegisterButtons from "./RegisterButtons";
+import { Link } from "react-router-dom";
+import { Axios } from "axios";
 
 
 export const UserRegister = () => {
@@ -103,30 +105,19 @@ export const UserRegister = () => {
     }
 
     // async function handleSubmit(event) {
-    //     event.preventDefault();
     //     await Axios.post("http://localhost:8080/save", 
     //     {
-    //         customerFirstname: customerFirstname,
-    //         customerLastname: customerLastname,
-    //         customerEmail: customerEmail,
-    //         customerPassword: customerPassword,
-    //         customerPhonenumber: customerPhonenumber,
-    //         customerState: customerState,
-    //         customerDistrict: customerDistrict,
-    //         customerCity: customerCity,
-    //         customerZipcode: customerZipcode
+    //         userFirstname: userRegisterData.userFirstname,
+    //         userLastname: userRegisterData.userLastname,
+    //         userEmail: userRegisterData.userEmail,
+    //         userPassword: userRegisterData.userPassword,
+    //         userPhonenumber: userRegisterData.userPhonenumber,
+    //         userState: userRegisterData.userState,
+    //         userDistrict: userRegisterData.userDistrict,
+    //         userCity: userRegisterData.userCity,
+    //         userZipcode: userRegisterData.userZipcode
     //     });
-
-        // setCustomerFirstname("");
-        // setCustomerLastname("");
-        // setCustomerEmail("");
-        // setCustomerPassword("");
-        // setCustomerPhonenumber("");
-        // setCustomerState("");
-        // setCustomerDistrict("");
-        // setCustomerCity("");
-        // setCustomerZipcode("");
-    //}
+    // }
 
     return (
         <div className={UserRegisterCSS.customer_register_bg}>
@@ -153,12 +144,13 @@ export const UserRegister = () => {
                     }}
                 />) : null}
                 <RegisterButtons text={userRegisterPage !==3 ? "Next" : "Finish"} 
-                    onClick={(e)=>{
-                        e.preventDefault();
+                    onClick={(event)=>{
+                        event.preventDefault();
                         
                         if(userRegisterPage === userRegisterTitle.length - 1){
                             console.log(userRegisterData);
                             //window.location.reload();
+                            //handleSubmit(event);
                         }
                         else{
                             setUserRegisterPage((currentPage) => currentPage+1);
@@ -169,6 +161,10 @@ export const UserRegister = () => {
                 />
             </div>
             </form>
+            {userRegisterPage === 0 ?
+            <Link to="/">
+                <p className={UserRegisterCSS.back_click}>BACK</p>
+            </Link> : null}
             </div>
             
         </div>

@@ -51,6 +51,10 @@ export const UserLogin = () => {
                         <Link to="/user-register">SIGN UP</Link></span>
                     </p>
                 </div>
+                <Link to="/">
+                    <p className={UserLoginCSS.back_click}>BACK</p>
+                </Link>
+                
             </form>
             </div>
         </div>

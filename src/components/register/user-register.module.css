@@ -96,6 +96,12 @@
     transform: scale(1.2);
 }
 
+.back_click{
+    color: rgb(5, 138, 227);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 15px;
+}
 
 /* --------------- CUSTOMER Register Progress Bar ---------------*/
 

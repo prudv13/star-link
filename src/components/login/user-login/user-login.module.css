@@ -30,8 +30,7 @@
 }
 
 .customer_login_icon{
-    height: 8;
-    width: 10.5rem;
+    width: 7.8rem;
 }
 
 .customer_login_form {
@@ -55,6 +54,13 @@
 .customer_login_form input:focus {
     outline: 1;
     outline-color: rgb(32, 177, 255);
+}
+
+.back_click{
+    color: rgb(5, 138, 227);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 /* ---------------CUSTOMER LOGIN PAGE BUTTON---------------*/
