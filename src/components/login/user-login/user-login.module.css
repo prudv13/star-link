@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.customer_login_bg{
+    height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(109.6deg, rgba(0, 51, 113, 0.4), rgba(11, 31, 0, 0.4)), url(/public/pexels-photoscom-93398.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_login_container{
+    background-color: white;
+    width: 26em;
+    height: 38em;
+    position: relative;
+    box-shadow: 0 0.188em 1.550em rgb(0, 46, 73);
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customer_login_icon{
+    height: 8;
+    width: 10.5rem;
+}
+
+.customer_login_form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.customer_login_form input {
+    background-color: rgb(229, 226, 226) !important;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    height: 3em;
+    padding: 1em;
+    width: 98% !important;
+}
+
+.customer_login_form input:focus {
+    outline: 1;
+    outline-color: rgb(32, 177, 255);
+}
+
+/* ---------------CUSTOMER LOGIN PAGE BUTTON---------------*/
+
+.customer_login_btn{
+    color: #333;
+    background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, #199ff9 98.9%);
+    font-size: 1.2rem;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 0.4rem;
+    text-align: center;
+    width: 6.5rem;
+    margin: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.customer_login_btn:link, .customer_login_btn:visited {
+    color: #333;
+    background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9%);
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+.customer_login_btn:hover, .customer_login_btn:active {
+    color: #fff;
+    background-image: linear-gradient(111.8deg, rgba(0,104,155,1) 19.8%, rgba(0,173,239,1) 92.1%);
+    transform: scale(1.2);
+    
+}
+
+.customer_login_span {
+    color: rgb(42, 170, 255);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 15px;
+}

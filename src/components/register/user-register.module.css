@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.customer_register_bg{
+    height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(to top, rgba(34, 25, 14, 0.4) 0%, rgba(0, 41, 67, 0.537)), url(/public/pexels-photoscom-93398.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_register_container{
+    background-color: white;
+    width: 30rem;
+    height: 40em;
+    position: relative;
+    box-shadow: 0 0.188em 1.550em rgb(0, 17, 27);
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.customer_register_icon{
+    height: 10;
+    width: 14rem;
+}
+
+.customer_register_form {
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.customer_register_form_input {
+    background-color: rgb(229, 226, 226);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    height: 3em;
+    padding: 1em;
+    width: 98%;
+}
+
+.customer_register_form_input:focus {
+    outline: 1;
+    outline-color: rgb(32, 177, 255);
+}
+
+.customer_register_form_input_span {
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+/* ---------------CUSTOMER Register PAGE BUTTON---------------*/
+
+ .customer_register_btn{
+    color: #333;
+    background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9%);
+    font-size: 1.2rem;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 0.4rem;
+    text-align: center;
+    width: 6.5rem;
+    margin: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.customer_register_btn:link, .customer_register_btn:visited {
+    color: #333;
+    background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9%);
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+.customer_register_btn:hover, .customer_register_btn:active {
+    color: #fff;
+    background-image: linear-gradient(111.8deg, rgba(0,104,155,1) 19.8%, rgba(0,173,239,1) 92.1%);
+    transform: scale(1.2);
+}
+
+
+/* --------------- CUSTOMER Register Progress Bar ---------------*/
+
+.progress_bar {
+    width: 95%;
+    height: 15px;
+    background-color: #fff;
+    margin: 5px;
+}
+  
+.progress_bar_div {
+    width: 33.3%;
+    height: 100%;
+    background-image: linear-gradient(111.8deg, rgba(0,104,155,1) 19.8%, rgba(0,173,239,1) 92.1%);
+} 

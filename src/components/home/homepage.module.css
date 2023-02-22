@@ -1,0 +1,75 @@
+*{
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar_transparent{
+    background-color: transparent !important;
+}
+
+/* HERO SECTION */
+
+.home_herocontainer{
+    height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(20, 32, 37, 0.509), rgba(20, 34, 37, 0.509)), url(/public/pexels-photoscom-93398.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.home_heroheader{
+    color: #fff !important;
+    font-family: sans-serif;
+    font-size: 2.8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.home_herocaption{
+    color: #fff !important;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.home_herobtn{
+    color: #333;
+    background-color: #fff;
+    font-size: 1.1rem !important;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+    height: 45px;
+    width: 90px;
+}
+
+.home_herobtn:link, .home_herobtn:visited{
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+}
+
+.home_herobtn:hover, .home_herobtn:active{
+    color: #333;
+    background-color: #199ff9;
+    transform: scale(1.1);
+}
+
+
+.who_we_are{
+    background-color: #fff;
+    margin-bottom: 3rem;
+}
+
+.wwa_header{
+    margin: 6rem 0 2rem 0;
+    border-bottom: 1.5px solid #000000;
+}
+.wwa_description{
+    margin-bottom: 2rem;
+}
+
+.wwa_card{
+    background-color: #ecf7ff;
+    border: 0
+}
