@@ -8,18 +8,6 @@ export const UserLogin = () => {
 
     const[customerEmail, setCustomerEmail] = useState("");
     const[customerPassword, setCustomerPassword] = useState("");
-
-    // const customerLogin = async(event) => {
-    //     event.preventDefault();
-    //     await Axios.post("http://localhost:8080/check",
-    //     {
-    //         custmrEmail: customerEmail,
-    //         custmrPassword: customerPassword
-    //     });
-
-    //     setCustomerEmail();
-    //     setCustomerPassword();
-    // }
     
     return (
         <div className={UserLoginCSS.customer_login_bg}>
@@ -44,7 +32,11 @@ export const UserLogin = () => {
                     }} /><div className="invalid-feedback">Please Enter your password</div>
                 </div><br/>
                 <div className="text-center">
-                    <button className={UserLoginCSS.customer_login_btn} onClick>Login</button> <br />
+                <Link to="/customer-dashboard">
+                    <button className={UserLoginCSS.customer_login_btn} onClick={(event) => {
+                        event.preventDefault();
+                    }}>Login</button>
+                </Link> <br />
                 </div>
                 <div className="text-center p-3">
                     <p className="small">Don't have an account? <br /> <span className={UserLoginCSS.customer_login_span}>
