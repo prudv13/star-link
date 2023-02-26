@@ -7,7 +7,7 @@
 .customer_register_bg{
     height: 100vh;
     max-width: 100%;
-    background-image: linear-gradient(to top, rgba(34, 25, 14, 0.4) 0%, rgba(0, 41, 67, 0.537)), url(/public/pexels-photoscom-93398.jpg);
+    background-image: linear-gradient(to top, rgba(63, 163, 197, 0.4) 0%, rgba(137, 179, 205, 0.537)), url(/public/pexels-photoscom-93398.jpg);
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -16,11 +16,13 @@
 }
 
 .customer_register_container{
-    background-color: white;
-    width: 30rem;
+    
+    background-image: linear-gradient(-225deg, rgba(141, 185, 202, 0.75), rgba(142, 163, 186, 0.75)), url("https://transparenttextures.com/patterns/cubes.png");
+    width: 70rem;
     height: 40em;
     position: relative;
-    box-shadow: 0 0.188em 1.550em rgb(0, 17, 27);
+    border-radius: 10px;
+    box-shadow: 0px 0px 39px 11px rgba(0, 0, 0, 0.464),0px 10px 15px -3px rgba(0,0,0,0.1);
     padding: 5px;
     margin: 10px;
     display: flex;
@@ -32,6 +34,11 @@
 .customer_register_icon{
     height: 10;
     width: 14rem;
+}
+
+.customer_register_logo{
+    display: flex;
+    justify-content: center;
 }
 
 .customer_register_form {
@@ -85,22 +92,15 @@
 
 .customer_register_btn:link, .customer_register_btn:visited {
     color: #333;
-    background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9%);
+    background-image: linear-gradient(111.8deg, rgba(0,104,155,1) 19.8%, rgba(0,173,239,1) 92.1%);
     text-decoration: none;
     transition: all 1s ease-in-out;
 }
 
 .customer_register_btn:hover, .customer_register_btn:active {
     color: #fff;
-    background-image: linear-gradient(111.8deg, rgba(0,104,155,1) 19.8%, rgba(0,173,239,1) 92.1%);
+    background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9%);
     transform: scale(1.2);
-}
-
-.back_click{
-    color: rgb(5, 138, 227);
-    text-decoration: underline;
-    font-weight: 500;
-    font-size: 15px;
 }
 
 /* --------------- CUSTOMER Register Progress Bar ---------------*/
@@ -116,4 +116,5 @@
     width: 33.3%;
     height: 100%;
     background-image: linear-gradient(111.8deg, rgba(0,104,155,1) 19.8%, rgba(0,173,239,1) 92.1%);
+    border-radius: 10px;
 } 

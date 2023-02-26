@@ -1,4 +1,4 @@
-.customer_dashboard{
+.vendor_dashboard{
     position: relative;
     display: flex;
     min-height: 100vh;
@@ -10,7 +10,19 @@
     overflow: hidden;
 }
 
-.customer_dashboard input{
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    z-index: 9999;
+  }
+  
+
+.vendor_dashboard input{
     background-color: rgb(229, 226, 226) !important;
     border: none;
     border-radius: 4px;
@@ -49,16 +61,17 @@
 }
 
 
-.customer_dashboard_main{
+.vendor_dashboard_main{
     position: relative;
     background-image: linear-gradient(rgba(92, 152, 179, 0.704), rgba(116, 145, 155, 0.721)), url(/public/pexels-photoscom-93398.jpg);
     background-position: bottom;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    flex: 1;
     background-color: #e4e4e4;
     height: 100vh;
-    width: 72%;
+    overflow: auto;
 }
 
 .mainheader{
@@ -67,7 +80,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-image: linear-gradient(-225deg, rgba(27, 47, 55, 0.75), rgba(42, 62, 84, 0.75)), url("https://transparenttextures.com/patterns/cubes.png");
+    margin-bottom: -16px;
+    background-image: linear-gradient(-225deg, rgba(27, 47, 55, 0.347), rgba(42, 62, 84, 0.369)), url("https://transparenttextures.com/patterns/cubes.png");
+    border-bottom: 0.6px solid rgba(255, 255, 255, 0.197) !important;
 }
 
 .maincontent{
@@ -76,6 +91,7 @@
     grid-template-columns: repeat(4,24%);
     grid-gap: 10px;
     padding: 10px;
+    overflow: hidden !important;
 }
 
 .content_row {
@@ -100,7 +116,7 @@
     scale: 1.1;
 }
 
-.customer_order_btn{
+.vendor_order_btn{
     color: #333;
     background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, #199ff9 98.9%);
     font-size: 1rem;
@@ -114,15 +130,24 @@
     cursor: pointer;
 }
 
-.customer_order_btn:link, .customer_order_btn:visited {
+.vendor_order_btn:link, .vendor_order_btn:visited {
     color: #333;
     background-image: linear-gradient(91.9deg, rgba(75,207,250,1) 6.3%, rgba(25,159,249,1) 98.9%);
     text-decoration: none;
     transition: all 1s ease-in-out;
 }
 
-.customer_order_btn:hover, .customer_order_btn:active {
+.vendor_order_btn:hover, .vendor_order_btn:active {
     color: #fff;
     background-image: linear-gradient(111.8deg, rgba(0,104,155,1) 19.8%, rgba(0,173,239,1) 92.1%);
     transform: scale(1.2); 
 }
+
+.map_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  

@@ -5,7 +5,7 @@ import logo from '../home/truck-logo.png';
 import axios from "axios";
 
 
-export const UserRegister = () => {
+export const CustomerRegister = () => {
 
     // let navigate = useNavigate();
 
@@ -18,11 +18,7 @@ export const UserRegister = () => {
         phoneNumber: ""
     });
 
-    const {firstname, lastname, email, password,confirmpassword, phoneNumber} = registerData;
-
-    const registerCondition = (firstname !== "" && lastname !== "" &&
-                                email !== "" && password !== "" && confirmpassword !== "" &&
-                                phoneNumber !== "");
+    const {firstname, lastname, email, password, confirmpassword, phoneNumber} = registerData;
 
     const handleChange = e => {
         setRegisterData({...registerData, [e.target.name] : e.target.value});
@@ -31,7 +27,7 @@ export const UserRegister = () => {
     const handleSubmit = (e) => {
         console.log(registerData);
         e.preventDefault();
-        axios.post("http://192.168.50.18:8080/api/sign-up/vendor", JSON.stringify(registerData),
+        axios.post("http://192.168.50.18:8080/api/sign-up/customer", JSON.stringify(registerData),
         {
             headers:{
                 'Content-Type': 'application/json'
@@ -40,8 +36,7 @@ export const UserRegister = () => {
             console.log(res);
         });
         //console.log(registerData);
-        //navigate("/")
-        
+        //navigate("/") 
     }
 
 
@@ -101,15 +96,12 @@ export const UserRegister = () => {
                 </div>
 
 
-               {!registerCondition ? 
-               <div className="mt-3 d-flex justify-content-center">
-                <button className={UserRegisterCSS.customer_register_btn}>Submit</button>
-                </div> :
+               
                 <div className="mt-3 d-flex justify-content-center">
                 <Link to="/user-login" style={{textDecoration: "none"}}>
                     <button type="submit" className={UserRegisterCSS.customer_register_btn}>Submit</button>
                 </Link>
-                </div> }
+                </div> 
 
                 
             </form>
